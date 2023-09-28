@@ -1,26 +1,50 @@
-body {
-    background-color: white;
+* {
+background-color: white;
+font-family: Georgia, 'Times New Roman', Times, serif;
+list-style-type: none;
 }
 
 header {
-    padding: 40px;
-    text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-size: 80px;
-    background: #1212f9;
-    color: #fff;
-  }
+    margin-top: 10px;
+    border-bottom: 150px solid green;
+}
+ h1 {
+    font-size: 100px;
+    color: rgb(190, 191, 192);
+    text-decoration: underline overline;
+    text-decoration-color: black;
+    margin-bottom: 0;
+    padding-left: 30px;
+ }
 
-main{
-    display: grid;
-    grid-template-columns: 1fr 3fr; 
+ nav ul {
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+ }
 
+li a {
+    color: rgb(190, 191, 192);
+    padding: 0 30px;  
 }
 
-section {
+.sidebar article {
+    display: inline-block;
+    margin: 150px 175px;
+}
+
+
+p {
+    width: 70%;
+    margin-left: 300px;
+}
+
+section ul {
     display: flex;
-    justify-content: flex-end;
-    padding: 20px;
-    font-size: 25px;
-    font-weight: bold;
+    flex-direction: row;
+    margin: 0 100px 0 400px;
+}
+
+section ul li {
+    padding: 0 40px;
 }
