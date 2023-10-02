@@ -7,14 +7,12 @@
 
 .main-header { 
     position: relative;
-    width: 90%;
-    padding: 40px 60px 0 60px;
-    margin-bottom: 0;
+    padding: 40px 20px 0 20px;
  }
 
  nav {
     display: flex;
-    width: 85%;
+    width: 100%;
     margin: auto;
     padding: 20px 0 0;
     justify-content: space-between;
@@ -30,6 +28,7 @@ h1 {
 nav ul li {
     display: inline-block;
     margin: 10px 20px 0;
+    padding-top: 75px;
 }
 
 nav a {
@@ -49,42 +48,58 @@ nav a:hover {
     background-position: center;
 }
 
-.sidenav {
-    position: relative;
-}
 
 .content {
+    display: flex;
     position: relative;
     width: 100%;
 } 
 
-#Biography, #Contact-Info {
+#Biography {
+    width: 15%;
     height: 250px;
 }
 
 .content h2 {
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: center;
     align-items: end;
     padding-right: 35px;
-    width: 250px;
-    height: 500px;
-    margin-top: 50px;
-    border-right: double black 5px;
+    margin-top: 25px 0;
+    margin-bottom: 25px;
+    /* border-right: double black 5px; */
 }
 
-.content aside {
-    width: 50%;
+aside {
+    width: 75%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin: 20px 10px;
+    padding: 100px;
 }
 
+p {
+    display: flex;
+    justify-content: center;
+}
+
+#My-Experience {
+    width: 15%;
+    height: 750px;
+}
 
 .card {
-    height: 75%;
-    margin-left: 90px 10px;
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 20px 20px 10px;
+    padding: 100px;
+    /* height: 75%;
+    margin-left: 90px 10px; */
 }
     
 img {
@@ -92,24 +107,45 @@ img {
     height: 200px;
     margin: 20px;
     padding: 20px;
-    border: 5px solid black;
+    border: 3px solid black;
 }
 
-.info {
+img:hover {
+    transition: .5s ease;
+    opacity: 50%;
+
+}
+.textbox {
+    position: relative;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+.textbox h4 {
+    position: absolute;
+    background-color: black;
+    color: rgb(190, 191, 192);
+    padding: 5px;
+    bottom: 46px;
+    left: 150px;
+}
+
+#Contact-Info {
+    width: 20%;
+}
+#info {
     display: flex;
-    width: 85%;
+    width: 100%;
     margin: auto;
-    padding: 20px 0 0;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-.info ul li {
+#info ul li {
     display: inline-block;
-    margin: 10px 100px;
+    margin: 10px 20px 0;
 }
 
-
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     header {
       color: rgb(68, 155, 249);
     }
@@ -126,4 +162,4 @@ img {
     body {
       background-color: rgb(68, 155, 249);
     }
-  }
+  } */
